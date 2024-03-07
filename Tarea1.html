@@ -1,0 +1,24 @@
+<html>
+  <head>
+	
+  </head>
+   <body>
+		<script>
+			function EsGrito(f){ //prototipo de funcion
+				let c=0;
+				for(i=0; i < f.length;i++){
+					if(f.charAt(i)=='!'){
+					c++;
+					}
+				}
+			return c;
+			}
+			let frase,grito='esgrito';
+			frase=prompt('ingrese frase ','');
+			if(EsGrito(frase)>=3){
+				grito='ESGRITO';
+			}
+			document.write(grito);
+		</script>
+	</body>
+</html>
